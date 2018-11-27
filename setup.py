@@ -13,8 +13,8 @@ setup(
     include_package_data=True,    # include everything in source control
 
     # ...but exclude README.txt from all packages
-    exclude_package_data={'': ['README.txt']},
-
+    # exclude_package_data={'': ['README.txt']},
+    package_data = { 'aml_calib': ['resources/*']},
     name='aml-tools',
     version='0.0.1',
     description='AML Tools',
