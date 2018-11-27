@@ -86,11 +86,11 @@ class HandEyeCalib(object):
                               Hg[i, :, :])  #  Transformation from i-th to j-th gripper pose
 
                 # print "LOOOK",
-                Pgij = 2 * rot2quat(Hgij[:3, :3])  #  ... and the corresponding quaternion
+                Pgij = rot2quat(Hgij[:3, :3]) # 2* #  ... and the corresponding quaternion
 
                 Hcij = np.matmul(Hc[j, :, :], np.linalg.inv(Hc[i, :, :]))  #  Transformation from i-th to j-th camera pose
 
-                Pcij = 2 * rot2quat(Hcij[:3, :3])  #  ... and the corresponding quaternion
+                Pcij = rot2quat(Hcij[:3, :3]) # 2* #  ... and the corresponding quaternion
 
                 #  Form linear system of equations
                 sk = skew(Pgij + Pcij)

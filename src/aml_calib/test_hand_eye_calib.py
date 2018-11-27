@@ -2,21 +2,20 @@
 from __future__ import absolute_import
 
 from aml_calib import HandEyeCalib
-from aml_calib.utils import posediff
+from aml_calib.utils import posediff, get_package_path
 import numpy as np
 import copy
 import scipy.io as spio
 from os.path import exists, join, dirname, abspath
 import os
-
+from pkg_resources import Requirement, resource_filename
 
 
 if __name__ == "__main__":
     he_calib = HandEyeCalib()
 
-    package_path = '/'.join(dirname(dirname(abspath(__file__))).split('/')[:-1])
-    test_data_path = abspath(package_path+'/test_data')
-
+    resources_path = filename = resource_filename(Requirement.parse("aml_tools"),"aml_calib/resources")
+    test_data_path = abspath(resources_path)
 
     wHc = spio.loadmat(test_data_path + '/wHc.mat')
     bHg = spio.loadmat(test_data_path + '/bHg.mat')
