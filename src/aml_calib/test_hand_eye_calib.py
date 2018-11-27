@@ -2,7 +2,7 @@
 from __future__ import absolute_import
 
 from aml_calib import HandEyeCalib
-from aml_calib.utils import posediff, get_package_path
+from aml_calib.utils import posediff
 import numpy as np
 import copy
 import scipy.io as spio
