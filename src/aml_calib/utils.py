@@ -1,4 +1,12 @@
-# import quaternion
+
+__author__ = 'Ermano Arruda'
+__copyright__ = 'Copyright 2018, Ermano Arruda, University of Birmingham'
+__license__ = 'MIT'
+__version__ = '0.7.0'
+__maintainer__ = 'Ermano Arruda'
+__email__ = 'ermano.arruda@gmail.com'
+__status__ = 'Development'
+
 import numpy as np
 
 def compute_log(q):

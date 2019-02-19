@@ -29,6 +29,15 @@
 #                  .. Also refered to as transformation from camera to world
 # 
 from __future__ import absolute_import
+
+__author__ = 'Ermano Arruda'
+__copyright__ = 'Copyright 2018, Ermano Arruda, University of Birmingham'
+__license__ = 'MIT'
+__version__ = '0.7.0'
+__maintainer__ = 'Ermano Arruda'
+__email__ = 'ermano.arruda@gmail.com'
+__status__ = 'Development'
+
 import numpy as np
 from .utils import rot2quat as rot2quat, quat2rot, transl, skew
 

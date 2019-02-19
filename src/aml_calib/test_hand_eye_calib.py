@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 from __future__ import absolute_import
 
+__author__ = 'Ermano Arruda'
+__copyright__ = 'Copyright 2018, Ermano Arruda, University of Birmingham'
+__license__ = 'MIT'
+__version__ = '0.7.0'
+__maintainer__ = 'Ermano Arruda'
+__email__ = 'ermano.arruda@gmail.com'
+__status__ = 'Development'
+
 from aml_calib import HandEyeCalib
 from aml_calib.utils import posediff
 import numpy as np
